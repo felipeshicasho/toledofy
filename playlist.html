@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span> Guardioes </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span>Da</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span>Galaxia </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span>dps do...</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span>XP3?</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="policies">
+      <ul>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left"></button>
+        <button type="button" class="fa fas fa-chevron-right"></button>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#">Premium</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Download</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
+        </ul>
+        <button type="button">Log In</button>
+      </div>
+
+    </div>
+    <div class="playlist-head">
+      <img src="https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-forest-pink-pt-br.jpg"
+        alt="Christian + toledonn">
+      <div class="playlist-titulo">
+        <span class="playlist-span">Playlist</span>
+        <span class="playlist-name-span">Playlist para Luiza </span>
+        <span class="description-span">Um match de músicas feito para uma tal de luiza? okok? </span>
+        <span class="icon-spotify">
+          <p>
+            <img src="https://i.scdn.co/image/ab67757000003b8255c25988a6ac314394d3fbf5"> Spotify - 0 curtidas - 4
+            músicas,<span style="  color: hsla(0,0%,100%,.7);
+                    "> cerca de 10min</span>
+          </p>
+        </span>
+      </div>
+    </div>
+
+
+      <div class="teste">
+        <div class="playlist-button">
+          <div class="button" onclick="toggleButton()">
+            <span class="play-icon">
+              <img src="play-button-arrowhead.png" alt="Play">
+            </span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="container">
+            <header>
+              <div class="img">#</div>
+              <div class="img">Título</div>
+              <div class="img">Álbum</div>
+              <div class="img">Adicionado por</div>
+            </header>
+
+            
+            <article>
+              <div>1</div>
+              <div class="imagem">
+                <img src="multimedia.png" alt="" onclick="toggleMusic(1)">
+              </div>
+              <div class="title">
+                <span class="title-music">Romance Ideal</span>
+                <span class="artist-name">Os Paralamas Do Sucesso</span>
+              </div>
+              <div>O Passo Do Lui</div>
+              <div>#</div>
+
+              <div>2</div>
+              <div class="imagem">
+                <img src="multimedia.png" alt="" onclick="toggleMusic(2)"> 
+              </div>
+              <div class="title">
+                <span class="title-music">The World We Knew</span>
+                <span class="artist-name">Frank Sinatra</span>
+              </div>
+              <div>The World We Knew</div>
+              <div>#</div>
+
+              <div>3</div>
+              <div class="imagem">
+                <img src="multimedia.png" alt="" onclick="toggleMusic(3)">
+              </div>
+              <div class="title">
+                <span class="title-music">Stormy Weather</span>
+                <span class="artist-name">Etta James</span>
+              </div>
+              <div>At Last!</div>
+              <div>#</div>
+
+              <div>4</div>
+              <div class="imagem">
+                <img src="multimedia.png" alt="" onclick="toggleMusic(4)">
+              </div>
+              <div class="title">
+                <span class="title-music">P.Y.T. (Pretty Young Thing)</span>
+                <span class="artist-name">Michael Jackson ou MJ</span>
+              </div>
+              <div>Sunday Night</div>
+              <div>#</div>
+
+              <div>5</div>
+              <div class="imagem">
+                <img src="multimedia.png" alt="" onclick="toggleMusic(5)">
+              </div>
+              <div class="title">
+                <span class="title-music">What you wont do, do for...</span>
+                <span class="artist-name">Bobby Caldwell</span>
+              </div>
+              <div></div>
+              <div>#</div>
+              
+            </article>
+            
+            
+          </div>
+          
+        </div>
+        <div class="music-info">
+          <p class="music-name">Nome da Música</p>
+          <p class="music-details">Artista - Álbum</p>
+          <div class="music-progress">
+            <span class="current-time">00:00</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span class="duration">00:00</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+      <script>
+        
+var isPlaying = false;
+var audio = new Audio(); 
+var currentMusic = null;
+
+function toggleMusic(musicId) {
+  if (currentMusic === null) {
+    playMusic(musicId);
+  } else {
+    if (currentMusic === musicId) {
+      stopMusic();
+    } else {
+      stopMusic();
+      playMusic(musicId);
+    }
+  }
+}
+
+function playMusic(musicId) {
+  stopMusic(); 
+  switch (musicId) {
+    case 1:
+      currentMusic = 1;
+      audio.src = 'song/music1.mp3';
+      audio.play();
+      break;
+    case 2:
+      currentMusic = 2;
+      audio.src = 'song/music2.mp3';
+      audio.play();
+      break;
+    case 3:
+      currentMusic = 3;
+      audio.src = 'song/music3.mp3';
+      audio.play();
+      break;
+    case 4:
+      currentMusic = 4;
+      audio.src = 'song/music5.mp3';
+      audio.play();
+      break;
+    case 5:
+      currentMusic = 5;
+      audio.src = 'song/music4.mp3';
+      audio.play();
+      break;
+  }
+}
+
+function stopMusic() {
+  audio.pause();
+  audio.currentTime = 0;
+  currentMusic = null;
+}
+
+// Atualiza as informações da música na div de informações
+function updateMusicInfo(musicName, artistAlbum, currentTime, duration, progressPercentage) {
+  document.querySelector('.music-name').textContent = title-music;
+  document.querySelector('.music-details').textContent = artist-name;
+  document.querySelector('.current-time').textContent = currentTime;
+  document.querySelector('.duration').textContent = duration;
+
+  // Atualiza a barra de progresso
+  const progressBar = document.querySelector('.progress');
+  progressBar.style.width = progressPercentage + '%';
+}
+
+
+
+      </script>
+      
+</body>
+
+</html>
